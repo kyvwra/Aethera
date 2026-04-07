@@ -77,7 +77,8 @@
   </div>
 
   <section class="section-container">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+    
+    <div class="about-grid">
       <div>
         <h2 class="section-title">Standarde internaționale pentru sănătatea ta.</h2>
         <p class="text-body">Rețeaua Aethera reunește cele mai performante tehnologii medicale și o echipă multidisciplinară de elită. De la intervenții chirurgicale complexe, până la programe avansate de screening, punem pacientul în centrul fiecărei decizii.</p>
@@ -85,7 +86,7 @@
         <a href="expertise.html" class="btn-link">Descoperă viziunea noastră →</a>
       </div>
       <div>
-        <div style="background: url('img/2.jpg') center/cover no-repeat; width: 100%; aspect-ratio: 4/3; border: 1px solid var(--border-color);"></div>
+        <div class="about-img"></div>
       </div>
     </div>
 
@@ -237,10 +238,5 @@
   </div>
 
   <script src="script.js"></script>
-  <script>
-    function toggleMenu() { document.getElementById('sideMenu').classList.toggle('open'); document.getElementById('menuOverlay').classList.toggle('open'); }
-    function toggleModal() { document.getElementById('appointmentModal').classList.toggle('active'); }
-    function toggleLoginModal() { document.getElementById('loginModal').classList.toggle('active'); }
-  </script>
 </body>
 </html>
