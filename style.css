@@ -25,11 +25,11 @@ body { background-color: var(--bg-white); color: var(--text-dark); line-height: 
 .logo { font-family: var(--font-heading); font-size: 1.6rem; color: var(--medical-navy); letter-spacing: 1px; }
 .nav-right { display: flex; align-items: center; gap: 15px; }
 
-/* --- Butoane Navbar (Mici si Egale) --- */
+/* --- Butoane Navbar (Flexibile si Rafinate) --- */
 .nav-btn {
-  width: 130px; padding: 10px 0; text-align: center; font-size: 0.75rem; font-weight: 600;
+  padding: 10px 18px; text-align: center; font-size: 0.75rem; font-weight: 600;
   text-transform: uppercase; letter-spacing: 0.5px; border-radius: 2px; cursor: pointer;
-  transition: all 0.3s; display: flex; align-items: center; justify-content: center; line-height: 1.2;
+  transition: all 0.3s; display: inline-flex; align-items: center; justify-content: center; line-height: 1.2;
 }
 .btn-nav-outline { border: 1px solid var(--medical-navy); color: var(--medical-navy); background: transparent; }
 .btn-nav-outline:hover { background: var(--medical-navy); color: #fff; }
@@ -77,14 +77,14 @@ body { background-color: var(--bg-white); color: var(--text-dark); line-height: 
 .action-card p { font-size: 0.85rem; color: rgba(255, 255, 255, 0.9); font-weight: 400; transition: color 0.3s; }
 .action-card:hover p { color: #fff; }
 
+/* --- Despre Noi / Standarde (Imaginea Fluida si Fixata) --- */
+.about-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 60px; align-items: center; }
+.about-img-fluid { width: 100%; height: 500px; object-fit: cover; border-radius: 4px; box-shadow: 0 15px 40px rgba(0,0,0,0.08); border: 1px solid var(--border-color); display: block; }
+
 /* --- Stats --- */
 .stats-container { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; text-align: center; padding: 60px 0; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); margin-top: 40px; }
 .stat-item h4 { font-family: var(--font-heading); font-size: 2.5rem; color: var(--medical-teal); margin-bottom: 10px; }
 .stat-item p { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--medical-navy); font-weight: 600; }
-
-/* --- Despre Noi / Standarde (Grila Refăcută) --- */
-.about-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 60px; align-items: center; }
-.about-img { background: url('img/2.jpg') center/cover no-repeat; width: 100%; min-height: 500px; border-radius: 4px; box-shadow: 0 15px 40px rgba(0,0,0,0.08); border: 1px solid var(--border-color); }
 
 /* --- Specialitati --- */
 .specialties-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
@@ -118,6 +118,7 @@ body { background-color: var(--bg-white); color: var(--text-dark); line-height: 
 .article-excerpt { font-size: 0.9rem; color: var(--text-muted); flex-grow: 1; display: block; }
 .article-full { display: none !important; margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border-color); color: var(--text-dark); font-size: 0.9rem; animation: fadeInDown 0.3s ease; }
 .article-btn { margin-top: 20px; align-self: flex-start; }
+
 .article-card.expanded .article-full { display: block !important; }
 .article-card.expanded .article-excerpt { display: none !important; }
 
@@ -196,13 +197,18 @@ body { background-color: var(--bg-white); color: var(--text-dark); line-height: 
 @media (max-width: 768px) {
   .navbar { padding: 12px 4%; }
   .logo { font-size: 1.1rem; }
-  .nav-btn { width: 85px; font-size: 0.55rem; padding: 6px 4px; line-height: 1.2; }
+  
+  /* Butoanele de navigare SCURTATE pe mobil */
+  .nav-btn { padding: 8px 10px; font-size: 0.65rem; width: auto; letter-spacing: 0; }
+  .hide-xs { display: none; } /* Aceasta clasa ascunde textul neesential pe mobil */
   .nav-right { gap: 6px; }
+  
   .hamburger { margin-left: 2px; }
   .hamburger span { width: 24px; height: 2px; }
   
+  /* Grila Despre Noi - Imagine Garantata */
   .about-grid { grid-template-columns: 1fr; gap: 30px; }
-  .about-img { min-height: 300px; }
+  .about-img-fluid { height: 280px; } /* Inaltime fixa pentru telefon */
   
   .quick-actions, .stats-container, .locations-grid, .footer-grid, .blog-grid, .tech-grid { grid-template-columns: 1fr; }
   .testimonials-text-grid { grid-template-columns: 1fr; gap: 10px; }
@@ -219,6 +225,6 @@ body { background-color: var(--bg-white); color: var(--text-dark); line-height: 
   .hero { background: var(--bg-gray) !important; padding-top: 60px; min-height: auto;} 
 }
 @media (max-width: 380px) {
-  .nav-btn { width: 75px; font-size: 0.5rem; padding: 5px 2px; }
+  .nav-btn { font-size: 0.55rem; padding: 6px 8px; }
   .logo { font-size: 0.95rem; }
 }
