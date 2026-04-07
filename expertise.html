@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Specialități & Tehnologie | Aethera Medical</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray">
+
+  <div class="top-bar">
+    <div class="top-bar-links">
+      <span>Call Center: 021 9999 (Non-stop)</span>
+    </div>
+    <div class="top-bar-links">
+      <a href="#" onclick="toggleLoginModal()">Dosar Medical</a>
+      <a href="#footer">Contact</a>
+      <span class="lang-selector"><a href="#" style="color: #fff;">RO</a> / <a href="#">EN</a></span>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">AETHERA.</a>
+    <div class="nav-right">
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="overlay-menu" id="menuOverlay" onclick="toggleMenu()"></div>
+  <div class="side-menu" id="sideMenu">
+    <span class="close-menu" onclick="toggleMenu()">&times;</span>
+    <h3 style="color: var(--medical-teal); font-family: var(--font-heading); margin-bottom: 20px; font-size: 1.2rem;">Meniu Navigare</h3>
+    <div class="menu-links">
+      <a href="index.html">Acasă</a>
+      <a href="expertise.html">Specialități & Tehnologie</a>
+      <a href="pachete.html">Pachete de Prevenție</a>
+      <a href="medici.html">Echipa Medicală</a>
+      <a href="blog.html">Jurnal Medical</a>
+      <a href="locatii.html">Locații & Contact</a>
+    </div>
+    <div class="menu-actions-mobile">
+      <button class="btn-outline" style="width: 100%; margin-bottom: 10px;" onclick="toggleMenu(); toggleLoginModal()">Rezultate Analize</button>
+      <button class="btn-primary" style="width: 100%;" onclick="toggleMenu(); toggleModal()">Programează-te</button>
+    </div>
+  </div>
+
+  <main style="padding-bottom: 100px;">
+    
+    <div class="section-container" style="padding-top: 60px;">
+      <h1 class="main-title" style="text-align: center;">Tehnologie de Vârf</h1>
+      <p class="text-body" style="text-align: center; margin: 0 auto 60px;">La Aethera, precizia diagnosticului și succesul tratamentelor sunt susținute de aparatură medicală de ultimă generație la nivel mondial.</p>
+      
+      <div class="tech-grid">
+        <div class="tech-card">
+          <h3>Sistemul Robotic DaVinci Xi</h3>
+          <p>Cea mai avansată tehnologie pentru chirurgia minim invazivă. Oferă medicului o vizualizare 3D HD și o precizie milimetrică, reducând durerea postoperatorie și scurtând timpul de spitalizare al pacientului.</p>
+        </div>
+        <div class="tech-card">
+          <h3>RMN 3 Tesla & CT 256 Slice</h3>
+          <p>Investigații imagistice de înaltă fidelitate, ultra-rapide și silențioase. Sistemul 3 Tesla identifică micro-leziuni greu de detectat pe aparatele standard, fiind esențial în neurochirurgie și oncologie.</p>
+        </div>
+        <div class="tech-card">
+          <h3>Laborator de Secvențiere Genomică</h3>
+          <p>Primul laborator integrat în spital capabil să citească întregul ADN uman. Permite tratamente oncologice personalizate și identificarea riscurilor de boli ereditare înainte de apariția simptomelor.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-container" style="padding-top: 20px;">
+      <h2 class="section-title" style="text-align: center;">Centre de Excelență</h2>
+      <p class="text-body" style="text-align: center; margin: 0 auto 60px;">Aethera acoperă peste 20 de specialități medicale și chirurgicale. Apasă pe o specialitate pentru a vedea detaliile.</p>
+      
+      <div class="specialties-grid">
+        <div class="specialty-item" onclick="this.classList.toggle('active')">
+          <span class="s-icon">♥</span> 
+          <h3 class="s-title">Cardiologie <span class="expand-icon">+</span></h3>
+          <p class="s-desc">Diagnostic non-invaziv și chirurgie cardiovasculară realizată de medici cu experiență internațională.</p>
+          <div class="s-subspecialties">
+            <ul>
+              <li>Aritmologie și Electrofiziologie</li>
+              <li>Cardiologie Intervențională</li>
+              <li>Ecocardiografie Avansată 3D</li>
+              <li>Reabilitare Cardiovasculară</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="specialty-item" onclick="this.classList.toggle('active')">
+          <span class="s-icon">⚛</span>
+          <h3 class="s-title">Oncologie Integrată <span class="expand-icon">+</span></h3>
+          <p class="s-desc">Abordare multidisciplinară (Tumor Board), chimioterapie personalizată și radioterapie de ultimă generație.</p>
+          <div class="s-subspecialties">
+            <ul>
+              <li>Chimioterapie Personalizată</li>
+              <li>Radioterapie Stereotactică</li>
+              <li>Imuno-Oncologie</li>
+              <li>Consiliere Genetică Oncologică</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="specialty-item" onclick="this.classList.toggle('active')">
+          <span class="s-icon">⚕</span>
+          <h3 class="s-title">Chirurgie Robotică <span class="expand-icon">+</span></h3>
+          <p class="s-desc">Intervenții minim invazive cu sistemul daVinci Xi, asigurând o precizie milimetrică și recuperare rapidă.</p>
+          <div class="s-subspecialties">
+            <ul>
+              <li>Urologie Robotică</li>
+              <li>Chirurgie Bariatrică Robotică</li>
+              <li>Ginecologie Minim Invazivă</li>
+              <li>Chirurgie Toracică Robotică</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="specialty-item" onclick="this.classList.toggle('active')">
+          <span class="s-icon">🧠</span>
+          <h3 class="s-title">Neurologie & Neurochir. <span class="expand-icon">+</span></h3>
+          <p class="s-desc">Tratamentul afecțiunilor sistemului nervos, susținut de imagistică avansată (RMN 3 Tesla) și tehnici fine.</p>
+          <div class="s-subspecialties">
+            <ul>
+              <li>Neuro-oncologie</li>
+              <li>Chirurgie Spinală Minim Invazivă</li>
+              <li>Managementul Bolilor Neurodegenerative</li>
+              <li>Neurofiziologie Clinică</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="specialty-item" onclick="this.classList.toggle('active')">
+          <span class="s-icon">🧬</span>
+          <h3 class="s-title">Genetică Medicală <span class="expand-icon">+</span></h3>
+          <p class="s-desc">Laborator propriu pentru analize genetice predictive și teste prenatale non-invazive, pentru un diagnostic sigur.</p>
+          <div class="s-subspecialties">
+            <ul>
+              <li>Genetică Oncologică (BRCA1/2)</li>
+              <li>Testare Prenatală Non-invazivă (NIPT)</li>
+              <li>Diagnostic Boli Rare</li>
+              <li>Farmacogenetică</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="specialty-item" onclick="this.classList.toggle('active')">
+          <span class="s-icon">👶</span>
+          <h3 class="s-title">Pediatrie & Neonatologie <span class="expand-icon">+</span></h3>
+          <p class="s-desc">Îngrijire la cele mai înalte standarde pentru copii, cu secție ATI Neonatală de nivel maxim și gardă 24/7.</p>
+          <div class="s-subspecialties">
+            <ul>
+              <li>Cardiologie Pediatrică</li>
+              <li>Neurologie Pediatrică</li>
+              <li>Terapie Intensivă Neonatală (Nivel 3)</li>
+              <li>Boli Infecțioase Pediatrice</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="footer-grid">
+      <div>
+        <h3 class="footer-heading">AETHERA MEDICAL</h3>
+        <p class="footer-info-text" style="max-width: 300px; margin-bottom: 20px;">Redefinim standardele calității în sistemul medical privat, prin inovație, empatie și precizie.</p>
+        <p class="footer-info-text"><strong>Call Center:</strong> 021 9999</p>
+        <p class="footer-info-text"><strong>Email:</strong> programari@aethera.ro</p>
+      </div>
+      <div>
+        <h3 class="footer-heading">Informații Pacienți</h3>
+        <ul class="footer-links">
+          <li><a href="#">Ghid Internare</a></li>
+          <li><a href="#" onclick="toggleLoginModal()">Dosar Medical (Rezultate)</a></li>
+          <li><a href="#">Asigurări Partenere</a></li>
+          <li><a href="#">Drepturile Pacientului</a></li>
+          <li><a href="pachete.html">Tarife și Pachete</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-heading">Program Rețea</h3>
+        <p class="footer-info-text"><strong>Spitale (Urgențe):</strong><br>Luni - Duminică: 24/7</p>
+        <p class="footer-info-text" style="margin-top: 10px;"><strong>Policlinici:</strong><br>Luni - Vineri: 08:00 - 20:00<br>Sâmbătă: 08:00 - 14:00</p>
+      </div>
+      <div>
+        <h3 class="footer-heading">Linkuri Rapide</h3>
+        <ul class="footer-links">
+          <li><a href="medici.html">Echipa Medicală</a></li>
+          <li><a href="expertise.html">Centre de Excelență</a></li>
+          <li><a href="locatii.html">Găsește o Clinică / Hartă</a></li>
+          <li><a href="#">Cariere & Recrutare</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Aethera Medical Network. Design exclusiv de KYVWURA.</p>
+    </div>
+    <div class="disclaimer-bar">
+      <strong>AVERTISMENT MEDICAL:</strong> Acest site web reprezintă strict un concept de design web (portofoliu) realizat de studioul KYVWURA. Datele prezentate nu sunt reale. Nicio informație prezentă aici nu este verificată din punct de vedere medical, nu constituie sfat, diagnostic sau tratament. Dezvoltatorul nu își asumă răspunderea pentru utilizarea acestor informații fictive.
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="appointmentModal">
+    <div class="modal-box">
+      <span class="close-btn" onclick="toggleModal()">&times;</span>
+      <h2 class="modal-title">Programare Nouă</h2>
+      <form onsubmit="event.preventDefault(); toggleModal(); alert('Cererea a fost trimisă cu succes.');">
+        <div class="form-group"><label>Nume complet</label><input type="text" required></div>
+        <div class="form-group"><label>Telefon</label><input type="tel" required></div>
+        <button type="submit" class="btn-primary" style="width: 100%; border: none;">Trimite Cererea</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal-box">
+      <span class="close-btn" onclick="toggleLoginModal()">&times;</span>
+      <h2 class="modal-title">Dosar Medical</h2>
+      <form onsubmit="event.preventDefault(); alert('CNP sau cod incorect.');">
+        <div class="form-group"><label>CNP Pacient</label><input type="text" required pattern="[0-9]{13}"></div>
+        <div class="form-group"><label>Cod Acces / Pacient</label><input type="password" required></div>
+        <button type="submit" class="btn-primary" style="width: 100%; border: none;">Vezi Rezultatele</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function toggleMenu() { document.getElementById('sideMenu').classList.toggle('open'); document.getElementById('menuOverlay').classList.toggle('open'); }
+    function toggleModal() { document.getElementById('appointmentModal').classList.toggle('active'); }
+    function toggleLoginModal() { document.getElementById('loginModal').classList.toggle('active'); }
+  </script>
+</body>
+</html>

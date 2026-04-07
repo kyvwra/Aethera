@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aethera Medical | Excelență în Sănătate</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="top-bar-links">
+      <span>Call Center: 021 9999 (Non-stop)</span>
+      <a href="#">Urgențe Medicale 24/7</a>
+    </div>
+    <div class="top-bar-links">
+      <a href="#" onclick="toggleLoginModal()">Dosar Medical</a>
+      <a href="#footer">Contact</a>
+      <span class="lang-selector">
+        <a href="index.html" style="color: #fff;">RO</a> / <a href="index-en.html">EN</a>
+      </span>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">AETHERA.</a>
+    <div class="nav-right">
+      <div class="nav-btn btn-nav-outline" onclick="toggleLoginModal()">Rezultate<br>Analize</div>
+      <div class="nav-btn btn-nav-primary" onclick="toggleModal()">Programează-te</div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="overlay-menu" id="menuOverlay" onclick="toggleMenu()"></div>
+  <div class="side-menu" id="sideMenu">
+    <span class="close-menu" onclick="toggleMenu()">&times;</span>
+    <h3 style="color: var(--medical-teal); font-family: var(--font-heading); margin-bottom: 20px; font-size: 1.2rem;">Meniu Navigare</h3>
+    <div class="menu-links">
+      <a href="index.html">Acasă</a>
+      <a href="expertise.html">Specialități & Tehnologie</a>
+      <a href="pachete.html">Pachete de Prevenție</a>
+      <a href="medici.html">Echipa Medicală</a>
+      <a href="blog.html">Jurnal Medical</a>
+      <a href="locatii.html">Locații & Contact</a>
+    </div>
+  </div>
+
+  <header class="hero" style="background: linear-gradient(to right, rgba(255,255,255,0.95) 30%, rgba(255,255,255,0) 80%), url('img/1.jpg') center/cover no-repeat;">
+    <div class="hero-content">
+      <h1 class="main-title">Excelență clinică.<br>Tehnologie pură.</h1>
+      <p class="text-body" style="color: #2d3748; font-weight: 600;">
+        Singura rețea medicală din România care combină secvențierea genomică cu excelența spitalicească. Diagnoză de mare precizie, tratament integrat și recuperare accelerată.
+      </p>
+      <div style="display: flex; gap: 20px; margin-top: 40px;">
+        <a href="medici.html" class="btn-primary">Alege un Medic</a>
+        <a href="expertise.html" class="btn-outline">Vezi Serviciile</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="quick-actions">
+    <a href="expertise.html" class="action-card">
+      <h3>Investigații Imagistice</h3>
+      <p>Programează rapid un RMN sau CT la aparatura noastră 3 Tesla.</p>
+    </a>
+    <a href="expertise.html" class="action-card">
+      <h3>Secția de Chirurgie</h3>
+      <p>Bloc operator dotat cu tehnologie robotică daVinci Xi.</p>
+    </a>
+    <a href="pachete.html" class="action-card">
+      <h3>Pachete de Check-up</h3>
+      <p>Screening complet pentru evaluarea generală a sănătății tale.</p>
+    </a>
+  </div>
+
+  <section class="section-container">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+      <div>
+        <h2 class="section-title">Standarde internaționale pentru sănătatea ta.</h2>
+        <p class="text-body">Rețeaua Aethera reunește cele mai performante tehnologii medicale și o echipă multidisciplinară de elită. De la intervenții chirurgicale complexe, până la programe avansate de screening, punem pacientul în centrul fiecărei decizii.</p>
+        <p class="text-body">Metodologia noastră combină expertiza medicilor de top cu inteligența artificială aplicată în radiologie și analize de laborator, reducând marja de eroare la zero.</p>
+        <a href="expertise.html" class="btn-link">Descoperă viziunea noastră →</a>
+      </div>
+      <div>
+        <div style="background: url('img/2.jpg') center/cover no-repeat; width: 100%; aspect-ratio: 4/3; border: 1px solid var(--border-color);"></div>
+      </div>
+    </div>
+
+    <div class="stats-container">
+      <div class="stat-item"><h4>20+</h4><p>Specialități</p></div>
+      <div class="stat-item"><h4>10+</h4><p>Medici Experți</p></div>
+      <div class="stat-item"><h4>24/7</h4><p>Linii de Gardă</p></div>
+      <div class="stat-item"><h4>3</h4><p>Spitale Premium</p></div>
+    </div>
+
+    <div style="margin-top: 80px;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px;">
+        <div>
+          <h2 class="section-title" style="margin-bottom: 10px;">Din Jurnalul Medical</h2>
+          <p class="text-body" style="margin-bottom: 0;">Fii la curent cu sfaturi de prevenție direct de la specialiștii noștri.</p>
+        </div>
+        <a href="blog.html" class="btn-outline hidden-mobile">Vezi Toate</a>
+      </div>
+      
+      <div class="blog-grid">
+        <a href="blog.html" class="article-card">
+          <div class="article-meta">10 Apr 2026 | Cardiologie</div>
+          <h3 class="article-title">Cum prevenim infarctul miocardic tăcut?</h3>
+          <p class="article-excerpt">Infarctul silențios apare fără durerile clasice în piept. Află la ce simptome aparent inofensive trebuie să fii atent.</p>
+        </a>
+        <a href="blog.html" class="article-card">
+          <div class="article-meta">05 Apr 2026 | Oncologie</div>
+          <h3 class="article-title">Rolul nutriției în chimioterapie</h3>
+          <p class="article-excerpt">Alimentația corectă susține sistemul imunitar și reduce efectele adverse ale tratamentelor oncologice.</p>
+        </a>
+        <a href="blog.html" class="article-card hidden-mobile">
+          <div class="article-meta">02 Apr 2026 | Chirurgie</div>
+          <h3 class="article-title">Avantajele Chirurgiei Robotice</h3>
+          <p class="article-excerpt">Recuperare rapidă și durere minimă. De ce sistemul DaVinci Xi schimbă regulile jocului în sala de operație.</p>
+        </a>
+      </div>
+    </div>
+
+    <div style="margin-top: 100px;">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 10px;">Poveștile Pacienților</h2>
+      <div class="testimonials-text-grid">
+        <div class="testimonial-item">
+          <p class="quote">"O echipă extraordinară. Am fost operat cu robotul daVinci și a doua zi am mers pe propriile picioare."</p>
+          <span class="author">— Marian D. (Cardiologie)</span>
+        </div>
+        <div class="testimonial-item">
+          <p class="quote">"Pentru prima dată într-un spital nu m-am simțit un simplu număr. Empatia medicilor este absolut lăudabilă."</p>
+          <span class="author">— Elena V. (Oncologie)</span>
+        </div>
+        <div class="testimonial-item">
+          <p class="quote">"Screening-ul m-a ajutat să descopăr o problemă din timp. Mulțumesc echipei pentru rapiditate și precizie."</p>
+          <span class="author">— Andrei C. (Prevenție)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="insurance-section">
+      <h3 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--medical-navy); margin-bottom: 20px;">Asigurări și Parteneriate Medicale</h3>
+      <div class="insurance-logos">
+        <span>Allianz-Țiriac</span> <span>•</span>
+        <span>Signal Iduna</span> <span>•</span>
+        <span>Omniasig</span> <span>•</span>
+        <span>Groupama</span> <span>•</span>
+        <span>NN Asigurări</span>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer">
+    <div class="footer-grid">
+      <div>
+        <h3 class="footer-heading">AETHERA MEDICAL</h3>
+        <p class="footer-info-text" style="max-width: 300px; margin-bottom: 20px;">Redefinim standardele calității în sistemul medical privat, prin inovație, empatie și precizie.</p>
+        <p class="footer-info-text"><strong>Call Center:</strong> 021 9999</p>
+        <p class="footer-info-text"><strong>Email:</strong> programari@aethera.ro</p>
+      </div>
+      <div>
+        <h3 class="footer-heading">Informații Pacienți</h3>
+        <ul class="footer-links">
+          <li><a href="#">Ghid Internare</a></li>
+          <li><a href="#" onclick="toggleLoginModal()">Dosar Medical (Rezultate)</a></li>
+          <li><a href="#">Asigurări Partenere</a></li>
+          <li><a href="#">Drepturile Pacientului</a></li>
+          <li><a href="pachete.html">Tarife și Pachete</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-heading">Program Rețea</h3>
+        <p class="footer-info-text"><strong>Spitale (Urgențe):</strong><br>Luni - Duminică: 24/7</p>
+        <p class="footer-info-text" style="margin-top: 10px;"><strong>Policlinici:</strong><br>Luni - Vineri: 08:00 - 20:00<br>Sâmbătă: 08:00 - 14:00</p>
+      </div>
+      <div>
+        <h3 class="footer-heading">Linkuri Rapide</h3>
+        <ul class="footer-links">
+          <li><a href="medici.html">Echipa Medicală</a></li>
+          <li><a href="expertise.html">Centre de Excelență</a></li>
+          <li><a href="locatii.html">Găsește o Clinică / Hartă</a></li>
+          <li><a href="#">Cariere & Recrutare</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Aethera Medical Network. Design exclusiv de KYVWURA.</p>
+    </div>
+    <div class="disclaimer-bar">
+      <strong>AVERTISMENT MEDICAL:</strong> Acest site web reprezintă strict un concept de design web (portofoliu) realizat de studioul KYVWURA. Datele prezentate nu sunt reale. Nicio informație prezentă aici nu este verificată din punct de vedere medical, nu constituie sfat, diagnostic sau tratament. Dezvoltatorul nu își asumă răspunderea pentru utilizarea acestor informații fictive.
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="appointmentModal">
+    <div class="modal-box">
+      <span class="close-btn" onclick="toggleModal()">&times;</span>
+      <h2 class="modal-title">Programare Nouă</h2>
+      <p class="text-body" style="font-size: 0.85rem; margin-bottom: 25px;">Completează detaliile de mai jos și un operator Aethera te va contacta în cel mai scurt timp pentru confirmare.</p>
+      <form onsubmit="event.preventDefault(); toggleModal(); alert('Cererea a fost trimisă cu succes (Demo).');">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+          <div class="form-group"><label>Nume complet</label><input type="text" required placeholder="Ex: Popescu Ion"></div>
+          <div class="form-group"><label>Telefon</label><input type="tel" required placeholder="07XX XXX XXX"></div>
+        </div>
+        <div class="form-group">
+          <label>Specialitate dorită</label>
+          <select required>
+            <option value="" disabled selected>Alege specialitatea...</option>
+            <option>Cardiologie</option>
+            <option>Chirurgie Generală</option>
+            <option>Oncologie</option>
+            <option>Imagistică (RMN/CT)</option>
+            <option>Altele</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Data preferată (opțional)</label><input type="date"></div>
+        <div class="form-group"><label>Mesaj / Simptome (opțional)</label><textarea rows="3" placeholder="Descrie scurt motivul programării..."></textarea></div>
+        <button type="submit" class="btn-primary" style="width: 100%; border: none;">Trimite Cererea</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal-box">
+      <span class="close-btn" onclick="toggleLoginModal()">&times;</span>
+      <h2 class="modal-title">Dosar Medical</h2>
+      <p class="text-body" style="font-size: 0.85rem; margin-bottom: 25px;">Autentifică-te pentru a accesa rezultatele analizelor, RMN/CT și istoricul vizitelor tale.</p>
+      <form onsubmit="event.preventDefault(); alert('CNP sau cod incorect. Vă rugăm să verificați datele de pe bonul fiscal.');">
+        <div class="form-group"><label>CNP Pacient</label><input type="text" required pattern="[0-9]{13}" placeholder="Ex: 1900101123456"></div>
+        <div class="form-group"><label>Cod Acces / Pacient</label><input type="password" required placeholder="Codul primit pe SMS sau factura (Ex: ATH-9921)"></div>
+        <button type="submit" class="btn-primary" style="width: 100%; border: none;">Vezi Rezultatele</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function toggleMenu() { document.getElementById('sideMenu').classList.toggle('open'); document.getElementById('menuOverlay').classList.toggle('open'); }
+    function toggleModal() { document.getElementById('appointmentModal').classList.toggle('active'); }
+    function toggleLoginModal() { document.getElementById('loginModal').classList.toggle('active'); }
+  </script>
+</body>
+</html>
